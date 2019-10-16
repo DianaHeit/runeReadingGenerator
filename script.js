@@ -32,6 +32,9 @@ document.querySelectorAll("img")[1].setAttribute("src", randomRuneSource2);
 
 
 // Reload page on button click
+// // window.location.reload();
+// location.reload();
+
 
 // document.querySelector("button").addEventListener("click", drawRunes);
 //
@@ -42,17 +45,22 @@ document.querySelectorAll("img")[1].setAttribute("src", randomRuneSource2);
 
 // The same as above, turned into an anonymous function
 document.querySelector("button").addEventListener("click", function(){
-  window.location.reload();
+
+  //Conditions
+  if (runeNumber1 > runeNumber2) {
+    document.querySelector("p").innerHTML = "You Will Be Stronger Than Your Circumstances <br> - Do It Today.";
+  } else if (runeNumber2 > runeNumber1) {
+    document.querySelector("p").innerHTML = "Your Circumstances Will Be Stronger Than You <br> - Don't Do It Today.";
+
+  } else {
+    document.querySelector("p").innerHTML = "The Odds Are Even.";
+
+  }
+  // return false;
+  //
 });
 
-//Conditions
-if (runeNumber1 > runeNumber2) {
-  document.querySelector("p").innerHTML = "You Will Be Stronger Than Your Circumstances <br> - Do It Today.";
 
-} else if (runeNumber2 > runeNumber1) {
-  document.querySelector("p").innerHTML = "Your Circumstances Will Be Stronger Than You <br> - Don't Do It Today.";
-
-} else {
-  document.querySelector("p").innerHTML = "The Odds Are Even.";
-
-}
+document.querySelector(".refresh").addEventListener("click", function(){
+  location.reload();
+});
