@@ -1,6 +1,6 @@
 body {
   font-family: 'Amatic SC', cursive;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 
@@ -8,7 +8,7 @@ body {
   width: 90%;
   margin: auto;
   text-align: center;
-  height: 100vh;
+  height: 99vh;
 }
 
 
@@ -17,15 +17,18 @@ button {
   font-family: 'Amatic SC', cursive;
   padding: 30px;
   background-color: #fff;
-  font-size: 4rem;
-  border-radius: 10px;
+  font-size: 3rem;
+  border-radius: 30px;
+  border: 7px solid darkgray;
 }
 
 
+
 p {
-  background-color: #443737;
+  background-color: darkred;
   border-radius: 10px;
   color: #fff;
+  font-size: 3rem;
 }
 
 footer {
@@ -33,5 +36,5 @@ footer {
 }
 
 footer a {
-  color: darkred;
+  color: #000;
 }
